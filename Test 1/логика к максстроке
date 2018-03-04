@@ -1,0 +1,88 @@
+7 -2 4 -11 24 -6 18 -72 39
+
+суммаИскмое = 7
+попарное сравнение. если сумма < 0, переход к след положит. когда сумма станет больше суммаИск, заменяем его.
+
+-------
+const signCount = (arr) => {
+	let posNum = 0;
+	let negNum = 0;
+	const largestString;
+	for (let i = 0; i <= arr.length; i++) {
+		if (arr[i] > 0) {
+			posNum += posNum;
+		} else {
+			negNum += negNum;
+		} 
+	if (posNum == 0) {
+		largestString = 0;
+	} else if (posNum > 0 && negNum == 0) {
+		for (i = 0; i <= arr.length; i++) {
+			largestString = largeststring + arr[i]; 
+	} return largestString = undefined; 
+};
+			
+
+лев ту прав
+
+поло =0
+отри 39
+нул 0
+
+если поло>0 и отри >0 break;
+
+поло >0 отри = 0, суммаиск = сумма всех элементов
+
+поло = 0, суммаиск = 0
+
+-------------------
+
+аллгоритм разбиения на положительные и отрицательные. 
+-0-- +0+ -0- +++0+ --0-- +0++ -0- ++0++0+ --
+
+перебор значений:
+
+let arrCombined = [];
+let j = 0;
+if (arr[0] >= 0) {
+	let defaultSign = pos;
+} else {
+let defaultSign = neg;
+};
+
+for (let i = 0, i <= arr.lenght, i++) {
+	if (arr[i] >= 0) {
+		currentSign = pos;
+	} else {
+		currentSign = neg;
+	};	
+	
+	if(defaultSign == currenrSign) {
+		arrCombined[j] = arrCombined[j] + arr[i]; 
+		} else {
+		arrCombined[++j] = arr[i];
+		defaultSign = currentSign;
+		};
+
+
+	Если сохрЗнак == текущийЗнак {
+		новМассив[j] = новМассив[j] + arr[i]; }
+	Если сохрЗнак != текущий знак {
+		новМассив[++j] = arr[i]; }
+
+
+первое помещается в новый массив (+-+-+-+-)
+знак сохраняется в переменную
+
+второе:
+если знак совпадает, то плюсуется к текущему элементу
+если не совпадает, то в новом массиве переход к следующему элементу и значение плюсуется в него. и знак меняется на
+противоположный
+
+
+
+массив должен начинаться и кончаться положительным
+отрезаем отрицательные с краёв
+
+
+
